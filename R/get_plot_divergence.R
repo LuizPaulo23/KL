@@ -62,18 +62,18 @@ get_plot_divergence <- function(p, q){
   # Criar histogramas sobrepostos \*
 
  plot_pq <- ggplot2::ggplot(data_pq,
-                  aes(x = valores, fill = grupo)) +
-                  geom_histogram(position = "identity",
+            ggplot2::aes(x = valores, fill = grupo)) +
+            ggplot2::geom_histogram(position = "identity",
                                  alpha = 0.7,
                                  bins = 30) +
-                  facet_wrap(~ variavel, scales = "free") +
-                  labs(title = "Divergence: Histograms of p and q Variables",
+            ggplot2::facet_wrap(~ variavel, scales = "free") +
+            ggplot2::labs(title = "Divergence: Histograms of p and q Variables",
                        x = "",
                        y = "Count") +
-                  scale_fill_manual(values = c("black", "darkorange")) +
-                  theme_minimal() +
-                  theme(legend.position = "bottom",
-                        legend.title = element_blank())
+            ggplot2::scale_fill_manual(values = c("black", "darkorange")) +
+            ggplot2::theme_minimal() +
+            ggplot2::theme(legend.position = "bottom",
+                           legend.title = element_blank())
 
  return(plot_pq)
 
