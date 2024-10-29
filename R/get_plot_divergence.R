@@ -37,7 +37,8 @@
 #' }
 #'
 #' @export
-
+#' @import ggplot2
+#' @import tidyr
 
 get_plot_divergence <- function(p, q){
 
