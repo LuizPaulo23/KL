@@ -16,6 +16,12 @@ $$
 D_{KL}(P || Q) = \int_{-\infty}^{\infty} P(x) \log\left(\frac{P(x)}{Q(x)}\right) dx
 $$
 
+**Discrete**: The calculation uses a weighted sum of the probabilities for each event in \( P \), comparing them with \( Q \). This approach is suitable for distributions with a finite number of possible outcomes/events, such as categorical variables or frequency counts across distinct categories.
+
+**Continuous**: The calculation of continuous KL divergence involves an integral over the support of the probability density function. This approach is used for distributions where variables can take any value within a continuous interval (e.g., Normal or Exponential distributions), and density functions need to be integrated.
+
+The package focuses on the first case, that is, the discrete case.
+
 ## Key Features
 
 - **KL Divergence Calculation**: Functions to compute KL divergence for discrete and continuous probability distributions.
