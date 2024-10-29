@@ -16,6 +16,13 @@ $$
 D_{KL}(P || Q) = \int_{-\infty}^{\infty} P(x) \log\left(\frac{P(x)}{Q(x)}\right) dx
 $$
 
+## Key Features
+
+- **KL Divergence Calculation**: Functions to compute KL divergence for discrete and continuous probability distributions.
+- **Distribution Comparison**: Tools for comparing observed frequencies or probability distributions in various contexts.
+- **Visualization**: Built-in plotting functions for visualizing the divergence between distributions.
+- **Applications**: Example workflows for using KL divergence in model evaluation, hypothesis testing, and information gain analysis.
+
 ## Installation
 
 To install the `KL` package, you can use the following commands in R:
