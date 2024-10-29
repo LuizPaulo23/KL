@@ -73,7 +73,7 @@ get_plot_divergence <- function(p, q){
             ggplot2::scale_fill_manual(values = c("black", "darkorange")) +
             ggplot2::theme_minimal() +
             ggplot2::theme(legend.position = "bottom",
-                           legend.title = element_blank())
+                           legend.title = ggplot2::element_blank())
 
  return(plot_pq)
 
