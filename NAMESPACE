@@ -1,1 +1,4 @@
 exportPattern("^[[:alpha:]]+")
+importFrom(tidyr, pivot_longer)
+importFrom(ggplot2, ggplot, aes, geom_histogram)
+
